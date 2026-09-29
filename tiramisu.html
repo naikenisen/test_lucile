@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recette : Gâteau aux Pommes Fondant et Moelleux</title>
+    <title>Recette : Tiramisu Italien Traditionnel</title>
     <style>
         :root {
-            --primary-color: #d96b43;
-            --secondary-color: #6b8e23;
+            --primary-color: #8b4513;
+            --secondary-color: #d2691e;
             --bg-color: #faf7f2;
             --card-bg: #ffffff;
             --text-color: #2c3e50;
@@ -28,8 +28,31 @@
             line-height: 1.6;
         }
 
+        nav {
+            background-color: #5c2c0c;
+            padding: 0.8rem 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: #f2cc8f;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #f2cc8f;
+            color: #5c2c0c;
+        }
+
         header {
-            background: linear-gradient(135deg, #e07a5f, #f2cc8f);
+            background: linear-gradient(135deg, #6f3812, #c87d53);
             color: white;
             text-align: center;
             padding: 3rem 1rem 2.5rem 1rem;
@@ -108,7 +131,7 @@
 
         h2 {
             color: var(--primary-color);
-            border-bottom: 2px solid #f2cc8f;
+            border-bottom: 2px solid #c87d53;
             padding-bottom: 0.5rem;
             margin-top: 0;
             font-size: 1.5rem;
@@ -147,7 +170,7 @@
 
         .tips {
             margin-top: 2rem;
-            background-color: #f4f8ec;
+            background-color: #fdf6ee;
             border-left: 5px solid var(--secondary-color);
             padding: 1.2rem 1.5rem;
             border-radius: 0 var(--border-radius) var(--border-radius) 0;
@@ -155,13 +178,13 @@
 
         .tips h3 {
             margin-top: 0;
-            color: #3b5210;
+            color: #6f3812;
             font-size: 1.2rem;
         }
 
         .tips p {
             margin: 0;
-            color: #4a5d23;
+            color: #5c2c0c;
         }
 
         footer {
@@ -171,41 +194,18 @@
             color: #95a5a6;
             margin-top: 3rem;
         }
-
-        nav {
-            background-color: #b04e28;
-            padding: 0.8rem 1.5rem;
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        nav a {
-            color: #f2cc8f;
-            text-decoration: none;
-            font-weight: 600;
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            transition: all 0.2s ease-in-out;
-        }
-
-        nav a:hover, nav a.active {
-            background-color: #f2cc8f;
-            color: #b04e28;
-        }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="index.html" class="active">Gâteau aux Pommes</a>
-        <a href="tiramisu.html">Tiramisu</a>
+        <a href="index.html">Gâteau aux Pommes</a>
+        <a href="tiramisu.html" class="active">Tiramisu</a>
     </nav>
 
     <header>
-        <h1>Gâteau aux Pommes Traditionnel</h1>
-        <p>Un classique moelleux, simple et gourmand pour le goûter</p>
+        <h1>Tiramisu Italien Traditionnel</h1>
+        <p>Le grand classique gourmand et onctueux au café et mascarpone</p>
     </header>
 
     <div class="container">
@@ -213,11 +213,11 @@
         <section class="meta-info">
             <div class="meta-item">
                 <span>Préparation</span>
-                <strong>15 min</strong>
+                <strong>25 min</strong>
             </div>
             <div class="meta-item">
-                <span>Cuisson</span>
-                <strong>35 min</strong>
+                <span>Repos</span>
+                <strong>4 heures min</strong>
             </div>
             <div class="meta-item">
                 <span>Difficulté</span>
@@ -235,15 +235,15 @@
             <aside class="card">
                 <h2>Ingrédients</h2>
                 <ul class="ingredients-list">
-                    <li>3 pommes (ex: Reine des Reinettes ou Gala)</li>
-                    <li>150 g de farine</li>
+                    <li>250 g de mascarpone</li>
+                    <li>3 œufs frais</li>
                     <li>100 g de sucre en poudre</li>
                     <li>1 sachet de sucre vanillé</li>
-                    <li>3 œufs</li>
-                    <li>1 sachet de levure chimique</li>
-                    <li>80 g de beurre fondu</li>
+                    <li>24 biscuits cuillères (ou boudoirs)</li>
+                    <li>1 grande tasse de café noir fort (refroidi)</li>
+                    <li>2 c. à soupe d'Amaretto ou de Marsala (optionnel)</li>
+                    <li>Cacao en poudre non sucré (pour le saupoudrage)</li>
                     <li>1 pincée de sel</li>
-                    <li>1 cuillère à soupe de rhum ou de fleur d'oranger (optionnel)</li>
                 </ul>
             </aside>
 
@@ -252,32 +252,36 @@
                 <h2>Préparation</h2>
                 <ol class="steps-list">
                     <li>
-                        <strong>Préparation du four et du moule :</strong><br>
-                        Préchauffez votre four à 180°C (thermostat 6). Beurrez et farinez un moule à manque d'environ 22 cm de diamètre.
+                        <strong>Séparation des œufs :</strong><br>
+                        Séparez les blancs des jaunes d'œufs dans deux saladiers distincts.
                     </li>
                     <li>
-                        <strong>Préparation des pommes :</strong><br>
-                        Épluchez les pommes, retirez le cœur et les pépins, puis coupez-les en lamelles ou en dés selon vos préférences.
+                        <strong>Préparation de la crème :</strong><br>
+                        Fouettez les jaunes d'œufs avec le sucre en poudre et le sucre vanillé jusqu'à ce que le mélange blanchisse et devienne mousseux.
                     </li>
                     <li>
-                        <strong>Mélange des ingrédients :</strong><br>
-                        Dans un grand saladier, fouettez les œufs avec le sucre en poudre et le sucre vanillé jusqu'à ce que le mélange blanchisse et devienne mousseux.
+                        <strong>Incorporation du mascarpone :</strong><br>
+                        Ajoutez le mascarpone aux jaunes sucrés et fouettez énergiquement afin d'obtenir un mélange bien lisse et homogène.
                     </li>
                     <li>
-                        <strong>Ajout du beurre et de la farine :</strong><br>
-                        Incorporez le beurre fondu refroidi, puis ajoutez progressivement la farine, la levure chimique et la pincée de sel. Mélangez bien jusqu'à obtenir une pâte lisse.
+                        <strong>Montage des blancs en neige :</strong><br>
+                        Ajoutez une pincée de sel aux blancs d'œufs et montez-les en neige très ferme. Incorporez-les délicatement à la crème au mascarpone à l'aide d'une maryse.
                     </li>
                     <li>
-                        <strong>Assemblage :</strong><br>
-                        Ajoutez les morceaux de pommes à la pâte et mélangez délicatement pour bien les enrober. Versez la préparation dans le moule.
+                        <strong>Préparation du café :</strong><br>
+                        Mélangez le café noir refroidi avec l'Amaretto (si vous choisissez d'en ajouter) dans un plat creux.
                     </li>
                     <li>
-                        <strong>Cuisson :</strong><br>
-                        Enfournez pour 35 à 40 minutes. Le gâteau est prêt lorsque la surface est bien dorée et qu'une pointe de couteau plantée au centre en ressort sèche.
+                        <strong>Montage du dessert :</strong><br>
+                        Trempez rapidement les biscuits cuillères dans le café sans trop les détremper, puis tapissez le fond d'un plat rectangulaire ou de verrines. Étalez une couche de crème au mascarpone par-dessus, puis répétez avec une deuxième couche de biscuits et de crème.
+                    </li>
+                    <li>
+                        <strong>Repos au réfrigérateur :</strong><br>
+                        Recouvrez le plat d'un film alimentaire et placez au réfrigérateur pendant au moins 4 heures (idéalement 12 à 24 heures pour une meilleure tenue).
                     </li>
                     <li>
                         <strong>Service :</strong><br>
-                        Laissez tiédir avant de démouler. Dégustez tiède ou froid !
+                        Juste avant de servir, saupoudrez généreusement la surface de cacao en poudre non sucré.
                     </li>
                 </ol>
             </main>
@@ -287,13 +291,13 @@
         <section class="tips">
             <h3>💡 Le conseil du chef</h3>
             <p>
-                Pour un gâteau encore plus gourmand, saupoudrez la surface d'un voile de sucre glace ou de cannelle avant de servir, ou accompagnez-le d'une boule de glace à la vanille !
+                Pour un tiramisu parfait avec une excellente tenue, préparez-le la veille ! La crème aura le temps de bien raffermir et les arômes du café et du cacao se diffuseront harmonieusement.
             </p>
         </section>
     </div>
 
     <footer>
-        <p>Bon appétit ! 🍎</p>
+        <p>Buon appetito ! ☕️🍰</p>
     </footer>
 
 </body>
