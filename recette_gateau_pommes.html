@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recette : Gâteau aux Pommes Fondant et Moelleux</title>
+    <style>
+        :root {
+            --primary-color: #d96b43;
+            --secondary-color: #6b8e23;
+            --bg-color: #faf7f2;
+            --card-bg: #ffffff;
+            --text-color: #2c3e50;
+            --accent-color: #f39c12;
+            --border-radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #e07a5f, #f2cc8f);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem 2.5rem 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .meta-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background: var(--card-bg);
+            padding: 1.2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+            gap: 1rem;
+        }
+
+        .meta-item {
+            text-align: center;
+            flex: 1 1 150px;
+        }
+
+        .meta-item span {
+            display: block;
+            font-size: 0.85rem;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .meta-item strong {
+            display: block;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-top: 0.2rem;
+        }
+
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.8fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .recipe-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #f2cc8f;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        ul, ol {
+            padding-left: 1.2rem;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+
+        .ingredients-list li {
+            list-style-type: square;
+        }
+
+        .ingredients-list li::marker {
+            color: var(--primary-color);
+        }
+
+        .steps-list {
+            padding-left: 1.4rem;
+        }
+
+        .steps-list li {
+            margin-bottom: 1.2rem;
+            padding-left: 0.3rem;
+        }
+
+        .steps-list li::marker {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .tips {
+            margin-top: 2rem;
+            background-color: #f4f8ec;
+            border-left: 5px solid var(--secondary-color);
+            padding: 1.2rem 1.5rem;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+
+        .tips h3 {
+            margin-top: 0;
+            color: #3b5210;
+            font-size: 1.2rem;
+        }
+
+        .tips p {
+            margin: 0;
+            color: #4a5d23;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #95a5a6;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gâteau aux Pommes Traditionnel</h1>
+        <p>Un classique moelleux, simple et gourmand pour le goûter</p>
+    </header>
+
+    <div class="container">
+        <!-- Informations clés -->
+        <section class="meta-info">
+            <div class="meta-item">
+                <span>Préparation</span>
+                <strong>15 min</strong>
+            </div>
+            <div class="meta-item">
+                <span>Cuisson</span>
+                <strong>35 min</strong>
+            </div>
+            <div class="meta-item">
+                <span>Difficulté</span>
+                <strong>Facile</strong>
+            </div>
+            <div class="meta-item">
+                <span>Parts</span>
+                <strong>6 personnes</strong>
+            </div>
+        </section>
+
+        <!-- Contenu principal -->
+        <div class="recipe-grid">
+            <!-- Ingrédients -->
+            <aside class="card">
+                <h2>Ingrédients</h2>
+                <ul class="ingredients-list">
+                    <li>3 pommes (ex: Reine des Reinettes ou Gala)</li>
+                    <li>150 g de farine</li>
+                    <li>100 g de sucre en poudre</li>
+                    <li>1 sachet de sucre vanillé</li>
+                    <li>3 œufs</li>
+                    <li>1 sachet de levure chimique</li>
+                    <li>80 g de beurre fondu</li>
+                    <li>1 pincée de sel</li>
+                    <li>1 cuillère à soupe de rhum ou de fleur d'oranger (optionnel)</li>
+                </ul>
+            </aside>
+
+            <!-- Étapes de préparation -->
+            <main class="card">
+                <h2>Préparation</h2>
+                <ol class="steps-list">
+                    <li>
+                        <strong>Préparation du four et du moule :</strong><br>
+                        Préchauffez votre four à 180°C (thermostat 6). Beurrez et farinez un moule à manque d'environ 22 cm de diamètre.
+                    </li>
+                    <li>
+                        <strong>Préparation des pommes :</strong><br>
+                        Épluchez les pommes, retirez le cœur et les pépins, puis coupez-les en lamelles ou en dés selon vos préférences.
+                    </li>
+                    <li>
+                        <strong>Mélange des ingrédients :</strong><br>
+                        Dans un grand saladier, fouettez les œufs avec le sucre en poudre et le sucre vanillé jusqu'à ce que le mélange blanchisse et devienne mousseux.
+                    </li>
+                    <li>
+                        <strong>Ajout du beurre et de la farine :</strong><br>
+                        Incorporez le beurre fondu refroidi, puis ajoutez progressivement la farine, la levure chimique et la pincée de sel. Mélangez bien jusqu'à obtenir une pâte lisse.
+                    </li>
+                    <li>
+                        <strong>Assemblage :</strong><br>
+                        Ajoutez les morceaux de pommes à la pâte et mélangez délicatement pour bien les enrober. Versez la préparation dans le moule.
+                    </li>
+                    <li>
+                        <strong>Cuisson :</strong><br>
+                        Enfournez pour 35 à 40 minutes. Le gâteau est prêt lorsque la surface est bien dorée et qu'une pointe de couteau plantée au centre en ressort sèche.
+                    </li>
+                    <li>
+                        <strong>Service :</strong><br>
+                        Laissez tiédir avant de démouler. Dégustez tiède ou froid !
+                    </li>
+                </ol>
+            </main>
+        </div>
+
+        <!-- Astuce du chef -->
+        <section class="tips">
+            <h3>💡 Le conseil du chef</h3>
+            <p>
+                Pour un gâteau encore plus gourmand, saupoudrez la surface d'un voile de sucre glace ou de cannelle avant de servir, ou accompagnez-le d'une boule de glace à la vanille !
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Bon appétit ! 🍎</p>
+    </footer>
+
+</body>
+</html>
